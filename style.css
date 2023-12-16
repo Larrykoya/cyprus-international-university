@@ -1,0 +1,187 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+.flex {
+  display: flex;
+}
+#nav {
+  background-color: #ffba08;
+  height: 160px;
+  width: 100%;
+}
+#upper-nav {
+  background-color: #bc2525;
+  width: 100%;
+  height: 44%;
+  justify-content: end;
+  padding-right: 9%;
+}
+.upper-nav-element {
+  margin-right: 1.5%;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 20px 55px 20px 0px;
+}
+.upper-nav-element:hover {
+  cursor: pointer;
+  color: aqua;
+  text-decoration: underline;
+}
+#lower-nav {
+  background-color: #dd050a;
+  width: 100%;
+  height: 55%;
+  color: #ffffff;
+  padding: 0% 8%;
+}
+#ciu-link {
+  height: 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+#ciu-logo {
+  padding: 10px;
+  height: 70px;
+}
+#ciu-name {
+  font-size: small;
+  padding-top: 15px;
+}
+#lower-nav-elements {
+  padding-left: 2%;
+}
+.lower-nav-element {
+  padding: 30px;
+  font-weight: bold;
+}
+.lower-nav-element:hover {
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+}
+#web-search-icons {
+  padding: 15px;
+}
+#web-search-icons:hover {
+  cursor: pointer;
+}
+#banner {
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  height: 400px;
+  width: 100%;
+}
+#banner-text {
+  font-weight: bold;
+  color: #ffffff;
+  padding-left: 9%;
+}
+#upper-banner-text {
+  padding: 30px 0px 20px 0px;
+  font-size: 100%;
+}
+#lower-banner-text {
+  font-size: 300%;
+}
+#grey {
+  color: #c1c1c1;
+}
+.section-container {
+  justify-content: space-evenly;
+  padding: 20px 100px;
+}
+.section-content {
+  border-radius: 20px;
+  height: 350px;
+  width: 500px;
+  overflow: hidden;
+}
+.section-content h1 {
+  font-size: 250%;
+  color: #5800b0;
+  margin-bottom: 35px;
+}
+.section-see-more {
+  margin-top: 25px;
+  color: #dd050a;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.section-see-more:hover {
+  cursor: pointer;
+}
+.section-content img {
+  border-radius: 20px;
+  height: 350px;
+  width: 500px;
+}
+.custom-h1 {
+  font-size: 280%;
+  color: #5800b0;
+  margin-top: 120px;
+  padding-left: 160px;
+}
+.amnesty-sub-section {
+  padding: 20px 0 50px 270px;
+}
+.link {
+  color: #dd050a;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.link:hover {
+  cursor: pointer;
+}
+.frame1 {
+  background-image: url(./images/frame-1-pix.png);
+}
+.frame2 {
+  background-image: url(./images/frame-2-pix.png);
+}
+.overlay {
+  font-weight: bold;
+  padding: 17px;
+  color: #ffffff;
+  margin-top: 56%;
+  height: 20%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgba(88, 0, 176, 0.85);
+}
+.frame:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  /* transform: scale(1.1);
+  transition: transform 0.3s ease; */
+}
+.tray {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #dd050a;
+  border-radius: 10px;
+  margin: 25px 13% 15px 11%;
+  width: 78%;
+}
+.tray p {
+  margin: 27px;
+}
+.tray:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+.arrow-down {
+  height: 50px;
+  margin: 15px;
+}
+.frame3 {
+  background-image: url(./images/frame-3-pix.png);
+}
+.frame4 {
+  background-image: url(./images/frame-4-pix.png);
+}
