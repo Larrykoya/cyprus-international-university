@@ -9,13 +9,28 @@
   <body>
     <div id="nav">
       <div id="upper-nav" class="flex">
-        <div class="upper-nav-element"><p>Students</p></div>
-        <div class="upper-nav-element"><p>Alumni</p></div>
-        <div class="upper-nav-element"><p>Careers</p></div>
-        <div class="upper-nav-element"><p>Contact</p></div>
+        <div
+          class="upper-nav-element link-simulation"
+          onmouseover="showDropDown()"
+          onmouseout="hideDropDown()"
+        >
+          <p>Students</p>
+        </div>
+        <div class="upper-nav-element link-simulation"><p>Alumni</p></div>
+        <div class="upper-nav-element link-simulation"><p>Careers</p></div>
+        <div class="upper-nav-element link-simulation"><p>Contact</p></div>
+      </div>
+      <div
+        id="drop-down"
+        onmouseover="showDropDown()"
+        onmouseout="hideDropDown()"
+      >
+        <a href="#" class="drop-down-component"><p>CIU Webmail</p></a>
+        <a href="#" class="drop-down-component"><p>Moodle</p></a>
+        <a href="#" class="drop-down-component"><p>SIS</p></a>
       </div>
       <div id="lower-nav" class="flex">
-        <a href="#" id="ciu-link">
+        <a href="https://www.ciu.edu.tr/en/students" id="ciu-link">
           <div class="flex">
             <img id="ciu-logo" src="./images/logo.png" alt="CIU-logo" />
 
@@ -149,5 +164,37 @@
         </div>
       </div>
     </div>
+    <div id="footer">
+      <div class="footer-section">
+        <h2 class="section-head">POPULAR LINKS</h2>
+        <div class="footer-section-content flex">
+          <p class="link-simulation">Become A Student</p>
+          <p class="link-simulation">Academic Calender</p>
+          <p class="link-simulation">Campus Map</p>
+        </div>
+        <div class="footer-section-content flex">
+          <p class="link-simulation">Application Portal</p>
+          <p class="link-simulation">folklore&literature journal</p>
+          <p class="link-simulation">privacy</p>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h2 class="section-head">GET IN TOUCH</h2>
+      </div>
+      <hr id="horizontal-rule" />
+      <div>
+        <a href="https://www.ciu.edu.tr/en/students" id="ciu-link">
+          <div class="flex">
+            <img id="ciu-logo" src="./images/logo.png" alt="CIU-logo" />
+            <div id="ciu-name">
+              <p>CYPRUS</p>
+              <p>INTERNATIONAL</p>
+              <p>UNIVERSITY</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
   </body>
+  <script src="script.js"></script>
 </html>
