@@ -211,8 +211,6 @@
   padding: 0px 150px 50px 150px;
   background-image: url(./images/footer-banner.png);
 }
-.footer-section {
-}
 .section-head {
   padding: 40px 0px;
   color: #ffba08;
@@ -222,8 +220,26 @@
   margin-bottom: 20px;
   width: 270px;
 }
+.other-footer-elements {
+  width: 300px;
+  color: #ffffff;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+.other-footer-elements img {
+  height: 35px;
+  margin-right: 10px;
+}
+.caption {
+  padding-top: 8px;
+}
 #horizontal-rule {
   background-color: #ffba08;
   height: 1px;
   border: none;
+}
+#copyright {
+  color: #ffffff;
+  font-size: 9pt;
+  padding: 30px 150px;
 }
