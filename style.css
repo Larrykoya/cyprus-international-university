@@ -17,7 +17,7 @@
   width: 100%;
   height: 44%;
   justify-content: end;
-  padding-right: 7%;
+  padding-right: 7.5%;
 }
 .upper-nav-element {
   margin-right: 1.5%;
@@ -27,7 +27,7 @@
 }
 #arrow-flip {
   height: 10px;
-  margin: 10px;
+  margin: 9px;
 }
 .link-simulation:hover {
   cursor: pointer;
