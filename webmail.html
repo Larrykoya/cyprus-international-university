@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Zimbra web client sign in</title>
+  </head>
+  <body>
+    <div id="background">
+      <div id="container">
+        <p id="webmail-title">zimbra</p>
+        <p id="webmail-sign-in-label">Sign In</p>
+        <form id="webmail-sign-in-form" action="">
+          <div class="webmail-input-container">
+            <div>
+              <label for="username">Username</label>
+            </div>
+            <input
+              type="text"
+              name="username"
+              class="webmail-input"
+              id="username"
+            />
+          </div>
+          <div class="webmail-input-container">
+            <div>
+              <label for="password"> Password</label>
+            </div>
+            <input
+              type="password"
+              name="password"
+              class="webmail-input"
+              id="password"
+            />
+          </div>
+          <div class="submit flex">
+            <button id="webmail-btn">Sign in</button>
+            <div class="stay-signed-in">
+              <input
+                type="checkbox"
+                name="stay-signed-in"
+                id="stay-signed-in"
+              />
+              <label for="stay-signed-in">Stay signed in</label>
+            </div>
+          </div>
+        </form>
+        <div id="version">
+          <p>Web App Version</p>
+          <select name="" id="" class="webmail-input">
+            <option value="Default">Default</option>
+            <option value="Classic">Classic</option>
+            <option value="Modern">Modern</option>
+          </select>
+        </div>
+        <div class="info">
+          <img id="info" src="./images/question-mark.svg" alt="" />
+        </div>
+      </div>
+      <p class="mail-copyright">
+        Copyright © 2005-2023 Synacor, Inc. All rights reserved. "Zimbra" is a
+        registered trademark of Synacor, Inc.
+      </p>
+    </div>
+  </body>
+</html>
