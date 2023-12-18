@@ -285,7 +285,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 136, 193, 0.4);
+  background-color: rgba(0, 136, 193, 0.6);
 }
 #container {
   position: absolute;
@@ -330,23 +330,37 @@
   height: 33px;
   width: 85px;
 }
+#webmail-btn {
+  cursor: pointer;
+}
 #stay-signed-in {
   margin-top: 8px;
   font-size: 10pt;
 }
-.info {
-  left: 93%;
-  bottom: 7%;
+#stay-signed-in:hover {
+  cursor: pointer;
+}
+#version {
   position: absolute;
-  height: 16px;
-  width: 16px;
-  padding-top: 2px;
-  padding-left: 3px;
+  top: 70.4%;
+  height: 80px;
+  width: 380px;
+  padding: 14px 40px;
+  background-color: #efeeee;
+  font-size: 8pt;
+}
+.info {
+  left: 61.5%;
+  bottom: 21.5%;
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  padding-left: 4px;
   border-radius: 50%;
   background-color: black;
 }
 #info {
-  height: 12px;
+  height: 11px;
 }
 .mail-copyright {
   top: 97%;

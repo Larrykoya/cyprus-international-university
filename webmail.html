@@ -8,44 +8,46 @@
   </head>
   <body>
     <div id="background">
-      <div id="container">
-        <p id="webmail-title">zimbra</p>
-        <p id="webmail-sign-in-label">Sign In</p>
-        <form id="webmail-sign-in-form" action="">
-          <div class="webmail-input-container">
-            <div>
-              <label for="username">Username</label>
-            </div>
-            <input
-              type="text"
-              name="username"
-              class="webmail-input"
-              id="username"
-            />
-          </div>
-          <div class="webmail-input-container">
-            <div>
-              <label for="password"> Password</label>
-            </div>
-            <input
-              type="password"
-              name="password"
-              class="webmail-input"
-              id="password"
-            />
-          </div>
-          <div class="submit flex">
-            <button id="webmail-btn">Sign in</button>
-            <div class="stay-signed-in">
+      <div id="pane">
+        <div id="container">
+          <p id="webmail-title">zimbra</p>
+          <p id="webmail-sign-in-label">Sign In</p>
+          <form id="webmail-sign-in-form" action="">
+            <div class="webmail-input-container">
+              <div>
+                <label for="username">Username</label>
+              </div>
               <input
-                type="checkbox"
-                name="stay-signed-in"
-                id="stay-signed-in"
+                type="text"
+                name="username"
+                class="webmail-input"
+                id="username"
               />
-              <label for="stay-signed-in">Stay signed in</label>
             </div>
-          </div>
-        </form>
+            <div class="webmail-input-container">
+              <div>
+                <label for="password"> Password</label>
+              </div>
+              <input
+                type="password"
+                name="password"
+                class="webmail-input"
+                id="password"
+              />
+            </div>
+            <div class="submit flex">
+              <button id="webmail-btn">Sign In</button>
+              <div class="stay-signed-in">
+                <input
+                  type="checkbox"
+                  name="stay-signed-in"
+                  id="stay-signed-in"
+                />
+                <label for="stay-signed-in">Stay signed in</label>
+              </div>
+            </div>
+          </form>
+        </div>
         <div id="version">
           <p>Web App Version</p>
           <select name="" id="" class="webmail-input">
