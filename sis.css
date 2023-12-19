@@ -1,0 +1,92 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+.flex {
+  display: flex;
+}
+#background {
+  background-image: url(./images/sis-background.jpg);
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+#container {
+  position: relative;
+  background-color: #fff;
+  left: 34%;
+  width: 400px;
+  height: 750px;
+  padding: 40px;
+}
+#header-image {
+  height: 43px;
+  margin-bottom: 15px;
+}
+#login-instruction {
+  font-size: 80%;
+}
+.sis-input-container {
+  margin: 5px 0;
+}
+.sis-input {
+  width: 100%;
+  margin: 4px 0;
+  padding: 0 3px;
+  height: 40px;
+  border: 1px solid #dfdfdf;
+  outline: none;
+  background-color: #e3f6fd;
+}
+#captcha-img {
+  width: 100%;
+}
+.sis-btn {
+  background-color: #75808d;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 15px 0;
+}
+.horizontal-rule {
+  background-color: #cfcfcc;
+  height: 1px;
+  border: none;
+}
+.more-options {
+  margin: 15px;
+}
+.more-options-btn {
+  padding: 8px;
+  margin: 2px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+}
+#footer {
+  padding: 20px;
+}
+.link-simulation {
+  color: #75808d;
+}
+.link-simulation:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#c-tag {
+  color: black;
+}
+.sis-copyright {
+  text-align: center;
+  font-size: 8pt;
+  margin: 3px;
+}

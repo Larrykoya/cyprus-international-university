@@ -1,0 +1,113 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+.flex {
+  display: flex;
+}
+#background {
+  padding: 7% 36%;
+  height: 100vh;
+  background-image: url(./images/web-mail-background.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+#background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 136, 193, 0.6);
+}
+#container {
+  position: absolute;
+  width: 380px;
+  height: 430px;
+  padding: 38px;
+  background-color: #ffffff;
+  color: #494848;
+  font-size: 8pt;
+}
+#webmail-title {
+  color: #0088c1;
+  font-size: 400%;
+  margin-bottom: 9px;
+}
+#webmail-sign-in-label {
+  font-size: 150%;
+  font-weight: 550;
+}
+#webmail-sign-in-form {
+  margin: 40px 0;
+}
+.webmail-input-container {
+  margin: 10px 0;
+}
+.webmail-input {
+  width: 100%;
+  margin: 4px 0;
+  height: 33px;
+  border-radius: 2px;
+  border: 1px solid #dfdfdf;
+  outline-color: #0088c1;
+  background-color: #e3f6fd;
+}
+.submit {
+  justify-content: space-between;
+}
+#webmail-btn {
+  background-color: #0088c1;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  height: 33px;
+  width: 85px;
+}
+#webmail-btn {
+  cursor: pointer;
+}
+#stay-signed-in {
+  margin-top: 8px;
+  font-size: 10pt;
+}
+#stay-signed-in:hover {
+  cursor: pointer;
+}
+#version {
+  position: absolute;
+  top: 70.4%;
+  height: 80px;
+  width: 380px;
+  padding: 14px 40px;
+  background-color: #efeeee;
+  font-size: 8pt;
+}
+#version-selector {
+  background-color: #fff;
+}
+.info {
+  left: 59%;
+  bottom: 21.5%;
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  padding-left: 4px;
+  border-radius: 50%;
+  background-color: black;
+}
+#info {
+  height: 11px;
+}
+.mail-copyright {
+  top: 97%;
+  left: 29%;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  font-size: 8pt;
+}
