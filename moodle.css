@@ -24,6 +24,7 @@
 }
 #login-instruction {
   font-size: 152%;
+  margin: 10px 0;
 }
 .moodle-input {
   width: 510px;
