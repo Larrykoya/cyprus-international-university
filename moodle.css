@@ -8,7 +8,7 @@
   display: flex;
 }
 #background {
-  background-color: rgba(255, 186, 8, 0.5);
+  background-color: #e6e3e3;
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -16,7 +16,7 @@
 #container {
   position: relative;
   left: 28%;
-  top: 3%;
+  top: 4%;
   width: 600px;
   height: 590px;
   background-color: #fff;
@@ -34,13 +34,14 @@
   font-size: 110%;
   border-radius: 5px;
   border: 1px solid #b6b6b6;
+  background-color: #e3f6fd;
 }
 .moodle-login-btn {
   cursor: pointer;
   color: white;
   background-color: #0f6cbf;
   width: 80px;
-  height: 50px;
+  height: 45px;
   border: none;
   border-radius: 4px;
   font-size: 110%;
@@ -66,6 +67,7 @@
 }
 #guest-notice {
   font-size: 120%;
+  font-weight: 100;
 }
 .btn {
   padding: 10px;
@@ -81,4 +83,35 @@
 .partition {
   border-left: 1px solid #b6b6b6;
   margin: 20px;
+}
+.language {
+  margin-top: 13px;
+  height: 30px;
+  width: 120px;
+  color: #0f6cbf;
+  font-size: 10pt;
+  background-color: #fff;
+  border: 3px solid #0f6cbf;
+}
+#drop-down {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 200px;
+  left: -3%;
+  top: 95.3%;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #b6b6b6;
+  visibility: hidden;
+}
+.language-option {
+  padding: 5px 13px;
+  margin: 5px 0;
+  font-size: 10pt;
+}
+.language-option:hover {
+  color: #fff;
+  background-color: #0f6cbf;
+  cursor: pointer;
 }
