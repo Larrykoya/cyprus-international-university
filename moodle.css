@@ -17,7 +17,7 @@
   position: relative;
   left: 28%;
   top: 3%;
-  width: 590px;
+  width: 600px;
   height: 590px;
   background-color: #fff;
   padding: 40px;
@@ -27,24 +27,27 @@
   margin: 10px 0;
 }
 .moodle-input {
-  width: 505px;
-  height: 45px;
-  margin: 10px 0;
+  width: 510px;
+  height: 50px;
+  margin: 10px 0 15px 0;
   padding: 10px;
   font-size: 110%;
   border-radius: 5px;
-  border: 1px solid #494848;
+  border: 1px solid #b6b6b6;
 }
 .moodle-login-btn {
   cursor: pointer;
   color: white;
   background-color: #0f6cbf;
   width: 80px;
-  height: 40px;
+  height: 50px;
   border: none;
   border-radius: 4px;
   font-size: 110%;
-  margin: 10px 0;
+  margin: 5px 0;
+}
+.moodle-login-btn:hover {
+  background-color: #185d99;
 }
 #lost-password {
   color: #0f6cbf;
@@ -57,15 +60,25 @@
 }
 .horizontal-rule {
   margin: 20px 0;
+  height: 1px;
+  background-color: #d9d9d9;
+  border: none;
 }
 #guest-notice {
   font-size: 120%;
 }
-.guest-btn {
-  height: 40px;
-  width: 150px;
+.btn {
+  padding: 10px;
   border: none;
   border-radius: 4px;
   background-color: #d9d9d9;
   margin: 10px 0;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #c4c3c3;
+}
+.partition {
+  border-left: 1px solid #b6b6b6;
+  margin: 20px;
 }
