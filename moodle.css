@@ -16,15 +16,14 @@
 #container {
   position: relative;
   left: 28%;
-  top: 4%;
+  top: 3%;
   width: 600px;
-  height: 590px;
+  height: 600px;
   background-color: #fff;
-  padding: 40px;
+  padding: 60px;
 }
 #login-instruction {
   font-size: 152%;
-  margin: 10px 0;
 }
 .moodle-input {
   width: 510px;
@@ -60,7 +59,7 @@
   cursor: pointer;
 }
 .horizontal-rule {
-  margin: 20px 0;
+  margin: 15px 0;
   height: 1px;
   background-color: #d9d9d9;
   border: none;
@@ -84,34 +83,16 @@
   border-left: 1px solid #b6b6b6;
   margin: 20px;
 }
-.language {
+#language {
   margin-top: 13px;
   height: 30px;
   width: 120px;
   color: #0f6cbf;
   font-size: 10pt;
-  background-color: #fff;
-  border: 3px solid #0f6cbf;
-}
-#drop-down {
-  position: absolute;
-  content: "";
-  width: 160px;
-  height: 200px;
-  left: -3%;
-  top: 95.3%;
-  background-color: #fff;
-  padding: 10px;
-  border: 1px solid #b6b6b6;
-  visibility: hidden;
-}
-.language-option {
-  padding: 5px 13px;
-  margin: 5px 0;
-  font-size: 10pt;
-}
-.language-option:hover {
-  color: #fff;
-  background-color: #0f6cbf;
   cursor: pointer;
+  background-color: #fff;
+  border: none;
+}
+#language:focus {
+  border: 3px solid #0f6cbf;
 }
