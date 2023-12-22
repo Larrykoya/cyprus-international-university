@@ -57,6 +57,10 @@
   cursor: pointer;
   margin: 15px 0;
 }
+.sis-btn-icon {
+  height: 15px;
+  padding-top: 2px;
+}
 .horizontal-rule {
   background-color: #cfcfcc;
   height: 1px;
