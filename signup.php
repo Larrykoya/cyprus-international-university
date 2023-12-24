@@ -9,7 +9,7 @@ $dbname = "ciu_db";
 //database creation and connection 
 try {
     $conn = mysqli_connect($servername, $username, $password, $dbname);
-        echo "Database Connected Successfully!";
+        // echo "Database Connected Successfully!";
 } catch (Exception) {
     echo("First connection failed: " . mysqli_connect_error()."<br>");
         $conn = mysqli_connect($servername, $username, $password);
@@ -42,24 +42,26 @@ try {
             echo "<br>Error creating table: " . mysqli_error($conn);
         }
 }
+
+//generating random student number with the specified range
 $student_no = rand(22000000,22399999);
+//user details from html form
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
 $username = $_POST["username"];
 $password = $_POST["password"];
 $success = null;
 $duplicate = null;
+
+//insertion sql query
 try {
   $insert_query = "INSERT INTO `students` VALUES('$student_no','$firstname','$lastname','$username','$password')";
   $success = mysqli_query($conn,$insert_query);
 } catch (mysqli_sql_exception $e) {
   echo ($e);
+  //checking for duplicate username error
   $duplicate = stristr($e,"Duplicate");
 }
-// $result = mysqli_query($conn,$stmt)
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -85,7 +87,7 @@ try {
           </div>
           <?php if( $success){?>
           <h3>
-            <?php echo("Congratulations ".$firstname." you have successfully created an account, your Student no is: ". $student_no) ?>
+            <?php echo("Congratulations ".$firstname." you have successfully created an account, your Student no is: ". $student_no . "<br> You can either login with your Student number or Username"); ?>
           </h3>
           <?php } else{?>
             <h3><?php echo ("Error occured while creating account..."); ?></h3>

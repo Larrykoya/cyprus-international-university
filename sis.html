@@ -22,7 +22,7 @@
           <p id="login-instruction">
             Login using your CIU-NET username/student number and password.
           </p>
-          <form id="sis-sign-in-form" action="">
+          <form id="sis-sign-in-form" action="sis_login.php" method="post">
             <div class="sis-input-container">
               <input
                 type="text"
@@ -30,6 +30,7 @@
                 class="sis-input"
                 id="username"
                 placeholder="Username/ Student No"
+                required
               />
             </div>
             <div class="sis-input-container">
@@ -39,6 +40,7 @@
                 class="sis-input"
                 id="password"
                 placeholder="Password"
+                required
               />
             </div>
             <img id="captcha-img" src="./images/captcha.png" alt="" />

