@@ -9,7 +9,7 @@
   <body>
     <div id="background">
       <div id="pane">
-        <div id="container">
+        <div style="height: 535px" id="container">
           <div id="header">
             <a href="#">
               <img
@@ -20,16 +20,35 @@
             </a>
           </div>
           <p id="login-instruction">
-            Login using your CIU-NET username/student number and password.
+            In order to create an account, please enter the required
+            information.
           </p>
           <form id="sis-sign-in-form" action="">
+            <div class="sis-input-container">
+              <input
+                type="text"
+                name="firstname"
+                class="sis-input"
+                id="firstname"
+                placeholder="Firstname"
+              />
+            </div>
+            <div class="sis-input-container">
+              <input
+                type="text"
+                name="lastname"
+                class="sis-input"
+                id="lastname"
+                placeholder="Lastname"
+              />
+            </div>
             <div class="sis-input-container">
               <input
                 type="text"
                 name="username"
                 class="sis-input"
                 id="username"
-                placeholder="Username/ Student No"
+                placeholder="Username"
               />
             </div>
             <div class="sis-input-container">
@@ -41,40 +60,12 @@
                 placeholder="Password"
               />
             </div>
-            <img id="captcha-img" src="./images/captcha.png" alt="" />
-            <div class="sis-input-container">
-              <input
-                type="text"
-                name="captcha"
-                class="sis-input"
-                id="captcha"
-                placeholder="Captcha Code"
-              />
-            </div>
-            <a href="#">
-              <button class="sis-btn">
-                Login
-                <img
-                  class="sis-btn-icon"
-                  src="./images/login_icon.svg"
-                  alt=""
-                />
-              </button>
-            </a>
-            <hr class="horizontal-rule" />
-          </form>
-          <a href="signup.html">
+
             <button class="sis-btn">
-              New Student
-              <img class="sis-btn-icon" src="./images/Certificate.svg" alt="" />
+              Create Account
+              <img class="sis-btn-icon" src="./images/login_icon.svg" alt="" />
             </button>
-          </a>
-          <hr class="horizontal-rule" />
-          <div class="more-options flex">
-            <button class="more-options-btn">Forgot My Password</button>
-            <button class="more-options-btn">Türkçe</button>
-            <button class="more-options-btn">Help</button>
-          </div>
+          </form>
           <div id="footer">
             <p class="sis-copyright link-simulation">
               <small id="c-tag">©</small> Cyprus International University
