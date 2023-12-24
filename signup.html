@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="sis.css" />
-    <title>CIU | SIS</title>
+    <title>CIU | SIS - Create account</title>
   </head>
   <body>
     <div id="background">
       <div id="pane">
-        <div style="height: 535px" id="container">
+        <div style="height: 600px" id="container">
           <div id="header">
             <a href="#">
               <img
@@ -23,7 +23,7 @@
             In order to create an account, please enter the required
             information.
           </p>
-          <form id="sis-sign-in-form" action="">
+          <form id="sis-sign-in-form" action="signup.php" method="post">
             <div class="sis-input-container">
               <input
                 type="text"
@@ -63,9 +63,24 @@
 
             <button class="sis-btn">
               Create Account
-              <img class="sis-btn-icon" src="./images/login_icon.svg" alt="" />
+              <img
+                class="sis-btn-icon"
+                src="./images/sign-up-arrow.svg"
+                alt=""
+              />
             </button>
           </form>
+          <a href="sis.html">
+            <button class="sis-btn">
+              Back
+              <img
+                style="transform: rotate(180deg)"
+                class="sis-btn-icon"
+                src="./images/sign-up-arrow.svg"
+                alt=""
+              />
+            </button>
+          </a>
           <div id="footer">
             <p class="sis-copyright link-simulation">
               <small id="c-tag">©</small> Cyprus International University
