@@ -12,7 +12,11 @@
         <div id="container">
           <p id="webmail-title">zimbra</p>
           <p id="webmail-sign-in-label">Sign In</p>
-          <form id="webmail-sign-in-form" action="">
+          <form
+            id="webmail-sign-in-form"
+            action="webmail_login.php"
+            method="post"
+          >
             <div class="webmail-input-container">
               <div>
                 <label for="username">Username</label>
@@ -22,6 +26,7 @@
                 name="username"
                 class="webmail-input"
                 id="username"
+                required
               />
             </div>
             <div class="webmail-input-container">
@@ -33,10 +38,11 @@
                 name="password"
                 class="webmail-input"
                 id="password"
+                required
               />
             </div>
             <div class="submit flex">
-              <button id="webmail-btn">Sign In</button>
+              <button type="submit" id="webmail-btn">Sign In</button>
               <div class="stay-signed-in">
                 <input
                   type="checkbox"

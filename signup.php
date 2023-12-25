@@ -2,17 +2,17 @@
 
 //database variables
 $servername = "localhost";
-$username = "root";
-$password = "";
+$dbusername = "root";
+$dbpassword = "";
 $dbname = "ciu_db";
 
 //database creation and connection 
 try {
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
+    $conn = mysqli_connect($servername, $dbusername, $dbpassword, $dbname);
         // echo "Database Connected Successfully!";
 } catch (Exception) {
     echo("First connection failed: " . mysqli_connect_error()."<br>");
-        $conn = mysqli_connect($servername, $username, $password);
+        $conn = mysqli_connect($servername, $dbusername, $dbpassword);
         if (!$conn) {
             die("Second connection failed: " . mysqli_connect_error());
         }    
@@ -23,7 +23,7 @@ try {
       }
       mysqli_close($conn);
       try {
-        $conn = mysqli_connect($servername, $username, $password, $dbname);
+        $conn = mysqli_connect($servername, $dbusername, $dbpassword, $dbname);
             echo "<br>Database Connected Successfully!";
       } catch (Exception) {
         die("Database Connection Failed: " . mysqli_connect_error());
