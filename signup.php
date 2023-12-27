@@ -9,23 +9,64 @@ $dbname = "ciu_db";
 //database creation and connection 
 try {
     $conn = mysqli_connect($servername, $dbusername, $dbpassword, $dbname);
-        // echo "Database Connected Successfully!";
-} catch (Exception) {
-    echo("First connection failed: " . mysqli_connect_error()."<br>");
-        $conn = mysqli_connect($servername, $dbusername, $dbpassword);
-        if (!$conn) {
-            die("Second connection failed: " . mysqli_connect_error());
-        }    
-        if (mysqli_query($conn, "CREATE DATABASE ciu_db")) {
-        echo "Database created successfully";
-      } else {
-        die("Error creating database: " . mysqli_error($conn));
-      }
-      mysqli_close($conn);
+        if ($conn) {
+          echo "Database Connected Successfully!";
+        }else{
+          echo("First connection failed: " . mysqli_connect_error()."<br>");
+          try {
+            $conn = mysqli_connect($servername, $dbusername, $dbpassword);
+            if (!$conn) {
+                die("Second connection failed: " . mysqli_connect_error());
+            } 
+            if (mysqli_query($conn, "CREATE DATABASE ciu_db")) {
+              echo "Database created successfully";
+            } else {
+              die("Error creating database: " . mysqli_error($conn));
+            }
+            mysqli_close($conn);           
+          } catch (mysqli_sql_exception $e) {
+            echo $e;
+          }
+          try {
+            $conn = mysqli_connect($servername, $dbusername, $dbpassword, $dbname);
+                echo "<br>Database Connected Successfully!";
+          } catch (mysqli_sql_exception $e) {
+            die("Database Connection Failed: " . mysqli_connect_error());
+          }
+        $sql = "CREATE TABLE students (
+            `studentno` INT(11) UNSIGNED PRIMARY KEY,
+            `firstname` VARCHAR(25) NOT NULL,
+            `lastname` VARCHAR(25) NOT NULL,
+            `username` VARCHAR(30) UNIQUE NOT NULL,
+            `password` VARCHAR(20) NOT NULL
+            )";
+            try {
+                mysqli_query($conn, $sql);
+                echo "<br>Students table created successfully";
+            } catch (mysqli_sql_exception $e) {
+                echo "<br>Error creating table: " . mysqli_error($conn);
+            }
+        }
+} catch (mysqli_sql_exception $e) {
+  echo("First connection failed: " . mysqli_connect_error()."<br>");
+  try {
+    $conn = mysqli_connect($servername, $dbusername, $dbpassword);
+    if (!$conn) {
+        die("Second connection failed: " . mysqli_connect_error());
+    } 
+    if (mysqli_query($conn, "CREATE DATABASE ciu_db")) {
+      echo "Database created successfully";
+    } else {
+      die("Error creating database: " . mysqli_error($conn));
+    }
+    mysqli_close($conn);           
+  } catch (mysqli_sql_exception $e) {
+    echo $e;
+  }        
       try {
         $conn = mysqli_connect($servername, $dbusername, $dbpassword, $dbname);
             echo "<br>Database Connected Successfully!";
-      } catch (Exception) {
+      } catch (mysqli_sql_exception $e) {
         die("Database Connection Failed: " . mysqli_connect_error());
       }
     $sql = "CREATE TABLE students (
@@ -38,7 +79,7 @@ try {
         try {
             mysqli_query($conn, $sql);
             echo "<br>Students table created successfully";
-        } catch (Exception) {
+        } catch (mysqli_sql_exception $e) {
             echo "<br>Error creating table: " . mysqli_error($conn);
         }
 }
